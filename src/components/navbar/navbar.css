@@ -1,0 +1,21 @@
+.cabecalho {
+  background-color: #0a2770;
+  font-family: "Inter", sans-serif;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+.btn-logar {
+  border-radius: 38px;
+  width: max-content;
+  min-width: max-content;
+  font-size: 16px;
+}
+
+.btn-logar span {
+  padding-left: 3%;
+  padding-right: 3%;
+}
