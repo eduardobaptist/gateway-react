@@ -1,7 +1,7 @@
 import logo from "../../assets/img/gateway_logo_branco.png";
 import "./navbar.css";
 
-const Navbar = () => {
+const Navbar = ({children}) => {
   return (
     <header>
       <nav className="navbar cabecalho d-flex justify-content-center">
@@ -15,24 +15,7 @@ const Navbar = () => {
               />
             </a>
           </div>
-          <div className="col-6 d-flex justify-content-end">
-            <button
-              type="button"
-              className="btn text-light border-0 btn-logar"
-              data-bs-toggle="modal"
-              data-bs-target="#modal-login"
-            >
-              <span>Entrar</span>
-            </button>
-            <button
-              type="button"
-              className="btn btn-outline-light btn-logar"
-              data-bs-toggle="modal"
-              data-bs-target="#modal-login"
-            >
-              <span>Começar</span>
-            </button>
-          </div>
+          {children}
         </div>
       </nav>
     </header>
