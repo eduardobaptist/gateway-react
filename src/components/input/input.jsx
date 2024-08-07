@@ -2,7 +2,7 @@ import "./input.css";
 
 const Input = ({ label, type, placeHolder, icon, name, value, onChange }) => {
   return (
-    <div className="form-group">
+    <div className="input-container">
       {label && <label htmlFor={name}>{label}</label>}
         {icon && <span className="input-icon">{icon}</span>}
         <input

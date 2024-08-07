@@ -2,6 +2,7 @@ import LottieAnimation from "../../components/lottie-animation/lottie";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faLock } from "@fortawesome/free-solid-svg-icons";
 
 import highfive from "../../animations/high-five.json";
 import Navbar from "../../components/navbar/navbar";
@@ -42,11 +43,20 @@ const Home = () => {
           onClose={() => setModalEntrar(false)}
           style={{ width: "500px" }}
         >
+          {/* Login */}
           <Input
             type={"text"}
-            icon={<FontAwesomeIcon icon={faUser} />}
+            icon={<FontAwesomeIcon icon={faUser} className="icon-color"/>}
             placeHolder={"Login"}
             name={"login"}
+          ></Input>
+
+          {/* Senha */}
+          <Input
+            type={"password"}
+            icon={<FontAwesomeIcon icon={faLock} className="icon-color"/>}
+            placeHolder={"Senha"}
+            name={"senha"}
           ></Input>
         </Modal>
 
@@ -56,11 +66,20 @@ const Home = () => {
           onClose={() => setModalComecar(false)}
           style={{ width: "500px" }}
         >
+          {/* Login */}
           <Input
             type={"text"}
-            icon={<FontAwesomeIcon icon={faUser} />}
+            icon={<FontAwesomeIcon icon={faUser} className="icon-color"/>}
             placeHolder={"Login"}
             name={"login"}
+          ></Input>
+
+          {/* Senha */}
+          <Input
+            type={"password"}
+            icon={<FontAwesomeIcon icon={faLock} className="icon-color"/>}
+            placeHolder={"Senha"}
+            name={"senha"}
           ></Input>
         </Modal>
       </Navbar>

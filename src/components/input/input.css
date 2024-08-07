@@ -5,3 +5,23 @@
 .input-icon {
   margin-right: 0.5rem;
 }
+
+.input-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 10px;
+}
+
+.input-container > input {
+  padding-left: 40px;
+  height: 50px; 
+  border-radius: 10px;
+  box-shadow: none !important;
+  border: solid #A9A9A9 0.1px;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+}
