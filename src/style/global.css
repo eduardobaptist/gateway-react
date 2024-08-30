@@ -13,10 +13,19 @@ body {
   font-family: "Mona Sans", sans-serif !important;
 }
 
+:root {
+  --azul-agregar: #0a2770;
+  --verde-gateway: #22B25B;
+}
+
 .btn-close {
   box-shadow: none !important;
 }
 
 .icon-color {
-  color: #0a1e53;
+  color: var(--azul-agregar);
+}
+
+input[type="radio"]{
+  visibility:hidden;
 }

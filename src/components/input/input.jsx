@@ -12,6 +12,7 @@ const Input = ({ label, type, placeHolder, icon, name, value, onChange }) => {
           name={name}
           value={value}
           onChange={onChange}
+          spellCheck="false" 
         />
     </div>
   );

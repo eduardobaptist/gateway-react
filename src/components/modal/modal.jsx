@@ -2,14 +2,18 @@ import "./modal.css";
 
 const Modal = ({ show, title, children, onClose, style }) => {
   return show ? (
-    <div className="modal">
-      <div className="modal-content" style={style}>
+    <div className="modal" onClick={onClose}>
+      <div
+        className="modal-content"
+        style={style}
+        onClick={(e) => e.stopPropagation()}
+      >
         <div className="modal-header">
           <h4 className="modal-title">{title}</h4>
           <button
             onClick={onClose}
             type="button"
-            class="btn-close"
+            className="btn-close"
             aria-label="Fechar"
           ></button>
         </div>
